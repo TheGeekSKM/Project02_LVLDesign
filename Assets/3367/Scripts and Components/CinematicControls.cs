@@ -35,7 +35,7 @@ public class CinematicControls : MonoBehaviour
         }
         else
         {
-            weaponCamera.cullingMask = LayerMask.GetMask("FirstPersonWeapon");
+            // weaponCamera.cullingMask = LayerMask.GetMask("FirstPersonWeapon");
         }
 
         if(disableHUDVisuals)
