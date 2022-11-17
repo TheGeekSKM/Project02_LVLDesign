@@ -11,7 +11,7 @@ public class DropRobot : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             Debug.Log("REEE");
-            Instantiate(_robot, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.identity);
+            FindObjectOfType<Friend>().transform.position = new Vector3(transform.position.x, transform.position.y + 2, transform.position.z);
             Destroy(gameObject);
         }
     }

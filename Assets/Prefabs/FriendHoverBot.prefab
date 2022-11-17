@@ -665,6 +665,7 @@ GameObject:
   - component: {fileID: 2514249439461343891}
   - component: {fileID: 8103496046254677014}
   - component: {fileID: 7855050222120060871}
+  - component: {fileID: 7791794358153934841}
   m_Layer: 0
   m_Name: FriendHoverBot
   m_TagString: Untagged
@@ -962,6 +963,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7791794358153934841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6961940989538008848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93ca327a639fb04cbeffc041d60494e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7344051165676492097
 GameObject:
   m_ObjectHideFlags: 0
