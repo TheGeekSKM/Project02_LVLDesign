@@ -11,6 +11,12 @@ public class EnemyMobile : MonoBehaviour
         Attack,
     }
 
+    public enum EnemyType
+    {
+        Enemy,
+        Friend
+    }
+
     public Animator animator;
     [Tooltip("Fraction of the enemy's attack range at which it will stop moving towards target while attacking")]
     [Range(0f, 1f)]
@@ -25,6 +31,7 @@ public class EnemyMobile : MonoBehaviour
     public MinMaxFloat PitchDistortionMovementSpeed;
 
     public AIState aiState { get; private set; }
+    public EnemyType _enemyType;
     EnemyController m_EnemyController;
     AudioSource m_AudioSource;
 
@@ -98,10 +105,10 @@ public class EnemyMobile : MonoBehaviour
         {
             case AIState.Patrol:
                 m_EnemyController.UpdatePathDestination();
-                m_EnemyController.SetNavDestination(m_EnemyController.GetDestinationOnPath());
+                if (_enemyType == EnemyType.Enemy) m_EnemyController.SetNavDestination(m_EnemyController.GetDestinationOnPath());
                 break;
             case AIState.Follow:
-                m_EnemyController.SetNavDestination(m_EnemyController.knownDetectedTarget.transform.position);
+                if (_enemyType == EnemyType.Enemy) m_EnemyController.SetNavDestination(m_EnemyController.knownDetectedTarget.transform.position);
                 m_EnemyController.OrientTowards(m_EnemyController.knownDetectedTarget.transform.position);
                 m_EnemyController.OrientWeaponsTowards(m_EnemyController.knownDetectedTarget.transform.position);
                 break;
@@ -109,11 +116,11 @@ public class EnemyMobile : MonoBehaviour
                 if (Vector3.Distance(m_EnemyController.knownDetectedTarget.transform.position, m_EnemyController.m_DetectionModule.detectionSourcePoint.position) 
                     >= (attackStopDistanceRatio * m_EnemyController.m_DetectionModule.attackRange))
                 {
-                    m_EnemyController.SetNavDestination(m_EnemyController.knownDetectedTarget.transform.position);
+                    if (_enemyType == EnemyType.Enemy) m_EnemyController.SetNavDestination(m_EnemyController.knownDetectedTarget.transform.position);
                 }
                 else
                 {
-                    m_EnemyController.SetNavDestination(transform.position);
+                    if (_enemyType == EnemyType.Enemy) m_EnemyController.SetNavDestination(transform.position);
                 }
                 m_EnemyController.OrientTowards(m_EnemyController.knownDetectedTarget.transform.position);
                 m_EnemyController.TryAtack(m_EnemyController.knownDetectedTarget.transform.position);

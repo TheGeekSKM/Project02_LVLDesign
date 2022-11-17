@@ -783,6 +783,7 @@ MonoBehaviour:
   PitchDistortionMovementSpeed:
     min: 1
     max: 1.5
+  _enemyType: 1
 --- !u!114 &2526445408931118069
 MonoBehaviour:
   m_ObjectHideFlags: 0
