@@ -64,7 +64,7 @@ public class EnemyMobile : MonoBehaviour
     void Update()
     {
         UpdateAIStateTransitions();
-        UpdateCurrentAIState();
+        if (m_EnemyController.m_NavMeshAgent != null) UpdateCurrentAIState();
 
         float moveSpeed = m_EnemyController.m_NavMeshAgent.velocity.magnitude;
 
@@ -105,7 +105,7 @@ public class EnemyMobile : MonoBehaviour
         {
             case AIState.Patrol:
                 m_EnemyController.UpdatePathDestination();
-                if (_enemyType == EnemyType.Enemy) m_EnemyController.SetNavDestination(m_EnemyController.GetDestinationOnPath());
+                if (_enemyType == EnemyType.Enemy && m_EnemyController.m_NavMeshAgent != null) m_EnemyController.SetNavDestination(m_EnemyController.GetDestinationOnPath());
                 break;
             case AIState.Follow:
                 if (_enemyType == EnemyType.Enemy) m_EnemyController.SetNavDestination(m_EnemyController.knownDetectedTarget.transform.position);
