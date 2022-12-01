@@ -11,7 +11,7 @@ public class ShootSpawner : MonoBehaviour
     GameObject _b;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             SpawnObject();
         }

@@ -9,7 +9,7 @@ public class DetectionModule : MonoBehaviour
     [Tooltip("The max distance at which the enemy can see targets")]
     public float detectionRange = 20f;
     [Tooltip("The max distance at which the enemy can attack its target")]
-    public float attackRange = 10f;
+    public float attackRange = 30f;
     [Tooltip("Time before an enemy abandons a known target that it can't see anymore")]
     public float knownTargetTimeout = 4f;
     [Tooltip("Optional animator for OnShoot animations")]
