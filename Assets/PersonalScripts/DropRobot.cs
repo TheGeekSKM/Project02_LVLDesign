@@ -11,7 +11,9 @@ public class DropRobot : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             Debug.Log("REEE");
-            FindObjectOfType<Friend>().transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            Friend friend = FindObjectOfType<Friend>();
+            friend.gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            friend.RandomizeName();
             Destroy(gameObject);
         }
     }
