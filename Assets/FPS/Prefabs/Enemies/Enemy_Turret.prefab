@@ -223,6 +223,7 @@ MonoBehaviour:
   pathReachingRadius: 0
   orientationSpeed: 10
   deathDuration: 0
+  _isFriend: 0
   swapToNextWeapon: 0
   delayAfterWeaponSwap: 0
   eyeColorMaterial: {fileID: 2100000, guid: 778fbfe9a7e4a96418b9312dbfc4d67c, type: 2}
@@ -617,7 +618,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1997026530960526579
 MonoBehaviour:
   m_ObjectHideFlags: 0
