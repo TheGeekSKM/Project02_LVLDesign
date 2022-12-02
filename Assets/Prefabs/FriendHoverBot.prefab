@@ -680,7 +680,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6961940989538008848}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -37.872536, y: -4.9943295, z: -21.921194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -710,6 +710,7 @@ MonoBehaviour:
   pathReachingRadius: 2
   orientationSpeed: 10
   deathDuration: 0
+  _isFriend: 1
   swapToNextWeapon: 0
   delayAfterWeaponSwap: 0
   eyeColorMaterial: {fileID: 2100000, guid: e6fdfd4e017234d43ac116abee8fa90a, type: 2}

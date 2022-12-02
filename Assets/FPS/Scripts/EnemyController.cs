@@ -28,6 +28,7 @@ public class EnemyController : MonoBehaviour
     public float orientationSpeed = 10f;
     [Tooltip("Delay after death where the GameObject is destroyed (to allow for animation)")]
     public float deathDuration = 0f;
+    [SerializeField] bool _isFriend = false;
 
 
     [Header("Weapons Parameters")]
@@ -123,7 +124,7 @@ public class EnemyController : MonoBehaviour
         m_ActorsManager = FindObjectOfType<ActorsManager>();
         DebugUtility.HandleErrorIfNullFindObject<ActorsManager, EnemyController>(m_ActorsManager, this);
 
-        m_EnemyManager.RegisterEnemy(this);
+        if (!_isFriend) m_EnemyManager.RegisterEnemy(this);
 
         m_Health = GetComponent<Health>();
         DebugUtility.HandleErrorIfNullGetComponent<Health, EnemyController>(m_Health, this, gameObject);
@@ -355,7 +356,7 @@ public class EnemyController : MonoBehaviour
         Destroy(vfx, 5f);
 
         // tells the game flow manager to handle the enemy destuction
-        m_EnemyManager.UnregisterEnemy(this);
+        if (!_isFriend) m_EnemyManager.UnregisterEnemy(this);
 
         // loot an object
         if (TryDropItem())
