@@ -12,7 +12,7 @@ public class DropRobot : MonoBehaviour
         {
             Debug.Log("REEE");
             Friend friend = FindObjectOfType<Friend>();
-            friend.gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            if (friend) friend.gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             friend.RandomizeName();
             Destroy(gameObject);
         }
