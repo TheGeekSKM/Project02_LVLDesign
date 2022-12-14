@@ -8,6 +8,8 @@ public class Health : MonoBehaviour
     [Tooltip("Health ratio at which the critical health vignette starts appearing")]
     public float criticalHealthRatio = 0.3f;
 
+    public bool _isPlayer = false;
+
     public UnityAction<float, GameObject> onDamaged;
     public UnityAction<float> onHealed;
     public UnityAction onDie;
@@ -42,6 +44,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float damage, GameObject damageSource)
     {
+        if (CamShaker.Instance && _isPlayer) CamShaker.Instance.ShakeCamera(3, 0.5f); 
         if (invincible)
             return;
 
