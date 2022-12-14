@@ -28,6 +28,11 @@ public class PlayerInputHandler : MonoBehaviour
         Cursor.visible = false;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
+    }
+
     private void LateUpdate()
     {
         m_FireInputWasHeld = GetFireInputHeld();

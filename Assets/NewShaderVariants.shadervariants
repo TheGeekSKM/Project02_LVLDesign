@@ -1,0 +1,421 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NewShaderVariants
+  m_Shaders:
+  - first: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: SHADOWS_SINGLE_CASCADE SHADOWS_SPLIT_SPHERES
+        passType: 0
+  - first: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION
+          _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF
+          _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP
+          _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _NORMALMAP
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _METALLICGLOSSMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _METALLICGLOSSMAP _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON _EMISSION _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _GLOSSYREFLECTIONS_OFF
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP
+          _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _NORMALMAP
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: LIGHTPROBE_SH _ALPHAPREMULTIPLY_ON _EMISSION _GLOSSYREFLECTIONS_OFF
+          _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _METALLICGLOSSMAP
+          _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: LIGHTPROBE_SH _EMISSION _GLOSSYREFLECTIONS_OFF _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON
+        passType: 5
+      - keywords: DIRECTIONAL _ALPHAPREMULTIPLY_ON _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT _METALLICGLOSSMAP
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT _METALLICGLOSSMAP _NORMALMAP
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT _METALLICGLOSSMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: FOG_LINEAR SHADOWS_DEPTH SHADOWS_SOFT SPOT _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: FOG_LINEAR SPOT _ALPHAPREMULTIPLY_ON
+        passType: 5
+      - keywords: FOG_LINEAR SPOT _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: FOG_LINEAR SPOT _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _NORMALMAP
+          _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: FOG_LINEAR SPOT _ALPHAPREMULTIPLY_ON _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: SHADOWS_DEPTH SHADOWS_SOFT SPOT
+        passType: 5
+      - keywords: SHADOWS_DEPTH SHADOWS_SOFT SPOT _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: SHADOWS_DEPTH SHADOWS_SOFT SPOT _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: SHADOWS_DEPTH SHADOWS_SOFT SPOT _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: SPOT _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _NORMALMAP
+        passType: 5
+      - keywords: SPOT _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP _NORMALMAP _SPECULARHIGHLIGHTS_OFF
+        passType: 5
+      - keywords: 
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP
+        passType: 8
+      - keywords: SHADOWS_DEPTH _METALLICGLOSSMAP
+        passType: 8
+      - keywords: _ALPHAPREMULTIPLY_ON
+        passType: 8
+      - keywords: _ALPHAPREMULTIPLY_ON _METALLICGLOSSMAP
+        passType: 8
+      - keywords: _METALLICGLOSSMAP
+        passType: 8
+  - first: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: _SUNDISK_SIMPLE
+        passType: 0
+  - first: {fileID: 108, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 207, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 210, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL FOG_LINEAR LIGHTPROBE_SH PROCEDURAL_INSTANCING_ON _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH PROCEDURAL_INSTANCING_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH PROCEDURAL_INSTANCING_ON _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _ALPHABLEND_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH PROCEDURAL_INSTANCING_ON VERTEXLIGHT_ON
+          _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH PROCEDURAL_INSTANCING_ON _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH VERTEXLIGHT_ON _ALPHABLEND_ON _NORMALMAP
+        passType: 4
+      - keywords: FOG_LINEAR LIGHTPROBE_SH _ALPHABLEND_ON _NORMALMAP
+        passType: 4
+      - keywords: PROCEDURAL_INSTANCING_ON _ALPHABLEND_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON _ALPHAPREMULTIPLY_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: PROCEDURAL_INSTANCING_ON
+        passType: 13
+  - first: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 4
+      - keywords: FOG_LINEAR
+        passType: 4
+      - keywords: FOG_LINEAR PROCEDURAL_INSTANCING_ON _ALPHABLEND_ON
+        passType: 4
+      - keywords: FOG_LINEAR _ALPHABLEND_ON
+        passType: 4
+      - keywords: FOG_LINEAR _ALPHABLEND_ON _COLORCOLOR_ON
+        passType: 4
+      - keywords: FOG_LINEAR _ALPHABLEND_ON _FADING_ON
+        passType: 4
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: FOG_LINEAR _ALPHATEST_ON
+        passType: 4
+      - keywords: FOG_LINEAR _COLORADDSUBDIFF_ON _EMISSION
+        passType: 4
+      - keywords: FOG_LINEAR _EMISSION
+        passType: 4
+      - keywords: PROCEDURAL_INSTANCING_ON _ALPHABLEND_ON
+        passType: 4
+      - keywords: _ALPHABLEND_ON
+        passType: 4
+      - keywords: _ALPHABLEND_ON _COLORADDSUBDIFF_ON _EMISSION
+        passType: 4
+      - keywords: _ALPHABLEND_ON _COLORCOLOR_ON
+        passType: 4
+      - keywords: _ALPHAPREMULTIPLY_ON
+        passType: 4
+      - keywords: _ALPHATEST_ON
+        passType: 4
+      - keywords: _COLORADDSUBDIFF_ON _EMISSION
+        passType: 4
+      - keywords: _EMISSION
+        passType: 4
+      - keywords: PROCEDURAL_INSTANCING_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH _ALPHABLEND_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH _ALPHABLEND_ON _COLORADDSUBDIFF_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH _ALPHABLEND_ON _COLORCOLOR_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH _ALPHATEST_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON SHADOWS_DEPTH _COLORADDSUBDIFF_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON _ALPHABLEND_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON _ALPHABLEND_ON _COLORCOLOR_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON _ALPHATEST_ON
+        passType: 8
+      - keywords: PROCEDURAL_INSTANCING_ON _COLORADDSUBDIFF_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHAPREMULTIPLY_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _ALPHATEST_ON
+        passType: 8
+      - keywords: SHADOWS_DEPTH _COLORADDSUBDIFF_ON
+        passType: 8
+      - keywords: 
+        passType: 13
+      - keywords: _ALPHATEST_ON
+        passType: 13
+  - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9001, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9004, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9007, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9101, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9103, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: b5c648405f0127c4ba0b5b58cd987e57, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
+    second:
+      variants:
+      - keywords: OUTLINE_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: UNDERLAY_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: c1e1d3119c6fd4646aea0b4b74cacc1a, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 4bf4cff0d0bac3d43894e2e8839feb40, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 382151503e2a43a4ebb7366d1632731d, type: 3}
+    second:
+      variants:
+      - keywords: BLOOM CHROMATIC_ABERRATION COLOR_GRADING_HDR_3D FINALPASS VIGNETTE
+        passType: 0
+      - keywords: FINALPASS
+        passType: 0
+  - first: {fileID: 4800000, guid: 67f9497810829eb4791ec19e95781e51, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: APPLY_FORWARD_FOG FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: de7f3ac52268a194383c7d62c2a343c1, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: 5bb6ef6f3e1b20348b4fdb01e4c404e2, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
